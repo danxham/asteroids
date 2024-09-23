@@ -24,7 +24,9 @@ def main():
         screen.fill("black")
         p1.draw(screen)
         pygame.display.flip()
-        dt = clock.tick(60) / 1000
+        p1.update(dt)
+
+        dt = clock.tick(60) / 1000 # set frame rate
 
 
 if __name__ == "__main__":
